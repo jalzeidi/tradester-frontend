@@ -1,5 +1,4 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
 import "./style/chart.css";
 import "./style/data.css"
 import {
@@ -102,7 +101,6 @@ const Dashboard = () => {
   return (
     <div className="container">
       <div className="data">
-        <Outlet />
         <table className="stock-table">
           <thead>
             <tr>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Blog = () => {
   const navigate = useNavigate();
@@ -7,7 +7,6 @@ const Blog = () => {
     <div>
       <h1>Login</h1>
       <button onClick={() => navigate("/blog/post")}>login</button>
-      <Outlet />
     </div>
   );
 };

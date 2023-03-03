@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Outlet } from 'react-router-dom';
 import "./style/simulation.css";
 
-const API_ENDPOINT = process.env.API_ENDPOINT || 'http://127.0.0.1:8000';
+const REACT_APP_API_ENDPOINT = process.env.API_ENDPOINT || 'http://127.0.0.1:8000';
 
 const Simulation = () => {
   const [investment, setInvestment] = useState(0);
@@ -12,7 +11,7 @@ const Simulation = () => {
   });
 
   const setAndFetchInvestment = (value) => {
-    fetch(`${API_ENDPOINT}/tradester/save_investment/?amount=${value}`)
+    fetch(`${REACT_APP_API_ENDPOINT}/tradester/save_investment/?amount=${value}`)
     .then((response) => response.json())
     .then((data) => {
       let investmentString = data.amount;
@@ -56,8 +55,6 @@ const Simulation = () => {
         <label>Enter investment value: </label>
         <input inputMode="decimal" pattern="^\d+(\.\d{1,2})?$" placeholder="0.00" onKeyDown={onKeyDown}/>
       </div>
-
-      <Outlet />
     </div>
   );
 }
