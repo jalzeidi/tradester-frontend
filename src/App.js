@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
+import { Routes, Route, Link, Outlet } from "react-router-dom";
 
 import About from "./components/About";
 import Blog from "./components/Blog";
@@ -14,19 +14,17 @@ import "./app.css";
 export default function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Nav />}>
-            <Route path="about" element={<About />}></Route>
-            <Route path="blog" element={<Blog />}></Route>
-            <Route path="post" element={<Post />}></Route>
+      <Routes>
+        <Route path="/" element={<Nav />}>
+          <Route path="about" element={<About />}></Route>
+          <Route path="blog" element={<Blog />}></Route>
+          <Route path="post" element={<Post />}></Route>
           <Route index element={<HomePage />}></Route>
-            <Route path="dashboard" element={<Dashboard />}></Route>
-            <Route path="login" element={<Login />}></Route>
-            <Route path="simulation" element={<Simulation />}></Route>
-          </Route>
-        </Routes>
-      </BrowserRouter>
+          <Route path="dashboard" element={<Dashboard />}></Route>
+          <Route path="login" element={<Login />}></Route>
+          <Route path="simulation" element={<Simulation />}></Route>
+        </Route>
+      </Routes>
     </div>
   );
 }
