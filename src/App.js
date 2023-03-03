@@ -1,12 +1,12 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 
-import About from "./routes/About";
-import Blog from "./routes/Blog";
-import Post from "./routes/Post";
-import Dashboard from "./routes/Dashboard.tsx";
-import Login from "./routes/Login.tsx";
-import Simulation from "./routes/Simulation";
+import About from "./components/About";
+import Blog from "./components/Blog";
+import Post from "./components/Post";
+import Dashboard from "./components/Dashboard.tsx";
+import Login from "./components/Login.tsx";
+import Simulation from "./components/Simulation";
 import bull from "./bull.png";
 import "./style.css";
 import "./app.css";
@@ -14,7 +14,7 @@ import "./app.css";
 export default function App() {
   return (
     <>
-      <Navbar />
+      <Nav />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
