@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import "./style/chart.css";
-import "./style/data.css"
+//import "./style/chart.css";
+//import "./style/data.css"
 import {
   Chart as ChartJS,
   CategoryScale,
