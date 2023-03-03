@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/tradester-frontend/static/css/main.38dd01dc.css",
-    "main.js": "/tradester-frontend/static/js/main.3c65f2d7.js",
+    "main.css": "/tradester-frontend/static/css/main.2459e797.css",
+    "main.js": "/tradester-frontend/static/js/main.07ed7261.js",
     "static/media/bull.png": "/tradester-frontend/static/media/bull.0693235a38eb7ef64e9c.png",
     "index.html": "/tradester-frontend/index.html",
-    "main.38dd01dc.css.map": "/tradester-frontend/static/css/main.38dd01dc.css.map",
-    "main.3c65f2d7.js.map": "/tradester-frontend/static/js/main.3c65f2d7.js.map"
+    "main.2459e797.css.map": "/tradester-frontend/static/css/main.2459e797.css.map",
+    "main.07ed7261.js.map": "/tradester-frontend/static/js/main.07ed7261.js.map"
   },
   "entrypoints": [
-    "static/css/main.38dd01dc.css",
-    "static/js/main.3c65f2d7.js"
+    "static/css/main.2459e797.css",
+    "static/js/main.07ed7261.js"
   ]
 }
