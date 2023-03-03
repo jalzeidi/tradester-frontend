@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import "./style/simulation.css";
 
-const REACT_APP_API_ENDPOINT = process.env.API_ENDPOINT || 'http://127.0.0.1:8000';
+const REACT_APP_API_ENDPOINT = 'https://tradester-backend.onrender.com';
 
 const Simulation = () => {
   const [investment, setInvestment] = useState(0);
