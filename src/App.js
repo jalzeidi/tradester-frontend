@@ -1,12 +1,12 @@
 import React from "react";
 import { Routes, Route, Link, Outlet } from "react-router-dom";
 
-import About from "./components/About";
-import Blog from "./components/Blog";
-import Post from "./components/Post";
-import Dashboard from "./components/Dashboard.tsx";
-import Login from "./components/Login.tsx";
-import Simulation from "./components/Simulation";
+import About from "./routes/About";
+import Blog from "./routes/Blog";
+import Post from "./routes/Post";
+import Dashboard from "./routes/Dashboard.tsx";
+import Login from "./routes/Login.tsx";
+import Simulation from "./routes/Simulation";
 import bull from "./bull.png";
 import "./style.css";
 import "./app.css";
@@ -16,13 +16,13 @@ export default function App() {
     <div>
       <Routes>
         <Route path="/" element={<Nav />}>
-          <Route path="about" element={<About />}></Route>
-          <Route path="blog" element={<Blog />}></Route>
-          <Route path="post" element={<Post />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/blog" element={<Blog />}></Route>
+          <Route path="/post" element={<Post />}></Route>
           <Route index element={<HomePage />}></Route>
-          <Route path="dashboard" element={<Dashboard />}></Route>
-          <Route path="login" element={<Login />}></Route>
-          <Route path="simulation" element={<Simulation />}></Route>
+          <Route path="/dashboard" element={<Dashboard />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/simulation" element={<Simulation />}></Route>
         </Route>
       </Routes>
     </div>
