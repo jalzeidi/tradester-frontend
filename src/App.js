@@ -16,10 +16,10 @@ export default function App() {
     <div>
       <Nav />
       <Routes>
+        <Route path="/" element={<HomePage />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/post" element={<Post />}></Route>
-        <Route index element={<HomePage />}></Route>
         <Route path="/dashboard" element={<Dashboard />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/simulation" element={<Simulation />}></Route>
