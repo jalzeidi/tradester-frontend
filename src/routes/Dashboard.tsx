@@ -102,7 +102,6 @@ const Dashboard = () => {
   return (
     <div className="container">
       <div className="data">
-        <Outlet />
         <table className="stock-table">
           <thead>
             <tr>

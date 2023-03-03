@@ -5,7 +5,6 @@ import { Outlet } from "react-router-dom";
 const About = () => {
   return (
     <div className="about">
-      <Outlet />
       <h1>About</h1>
     </div>
   );

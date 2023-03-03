@@ -1,9 +1,7 @@
 import React from "react";
-import { Outlet, useNavigate } from "react-router-dom";
 //import "./style/login.css";
 
 const Login = () => {
-  const navigate = useNavigate();
   return (
     <form action="#" method="" className="form">
       <h1>login</h1>

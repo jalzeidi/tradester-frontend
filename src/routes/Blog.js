@@ -7,7 +7,6 @@ const Blog = () => {
     <div>
       <h1>Login</h1>
       <button onClick={() => navigate("/blog/post")}>login</button>
-      <Outlet />
     </div>
   );
 };

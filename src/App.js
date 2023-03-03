@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Link, Outlet } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 
 import About from "./routes/About";
 import Blog from "./routes/Blog";
@@ -14,7 +14,7 @@ import "./app.css";
 export default function App() {
   return (
     <div>
-      <Nav />
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/about" element={<About />}></Route>
@@ -37,6 +37,16 @@ const HomePage = () => {
   );
 };
 
+const Navbar =()=>{
+  return (
+        <div>
+              <Link to="/">Home</Link>
+              <Link to="/about">About</Link>
+              <Link to="/simulation">Simulation</Link>
+        </div>
+  )
+}
+
 const Nav = () => {
   return (
     <div>
@@ -49,9 +59,6 @@ const Nav = () => {
           <Link to="/simulation">Simulation</Link>
           <Link to="/login">Login</Link>
         </div>
-      </div>
-      <div>
-        <Outlet />
       </div>
     </div>
   );
